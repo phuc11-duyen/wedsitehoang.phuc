@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Xuân Vườn Trường</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dff6ff, #fff5d6);
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        h1 {
+            font-size: 45px;
+            color: #4b7bec;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        .container {
+            padding: 40px 20px;
+        }
+
+        .card {
+            max-width: 700px;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: #4b7bec;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3867d6;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(255,255,255,0.7);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌿 Thanh Xuân Vườn Trường 🌿</h1>
+        <p>Nơi lưu giữ những năm tháng đẹp nhất của tuổi học trò</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1"
+                 alt="Thanh xuân học đường">
+
+            <h2>Tuổi học trò của chúng ta 💙</h2>
+
+            <p>
+                Có những ngày tưởng như bình thường,
+                nhưng sau này lại trở thành những ký ức
+                mà chúng ta nhớ mãi.
+            </p>
+
+            <button onclick="showMessage()">
+                ✨ Nhấn vào đây
+            </button>
+
+            <p id="message"></p>
+
+        </div>
+    </div>
+
+    <footer>
+        © 2026 - Thanh Xuân Vườn Trường
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "🌸 Thanh xuân chỉ đến một lần, hãy trân trọng từng khoảnh khắc nhé! 🌸";
+        }
+    </script>
+
+</body>
+</html>
